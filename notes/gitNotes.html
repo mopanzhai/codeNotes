@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Git Notes</title>
+  <style>
+    code{border: 1px solid rgba(0, 0, 0, 0.15);padding:5px 4px;margin: 0;background-color: #f5f5f5;white-space: pre-wrap;display: block;max-width: 50%;}
+  </style>
+</head>
+<body>
+  <h3>GIT 笔记</h3>
+<pre>
+$ git init 新创建仓库
+<code>$ git init</code>
+$ git add  把文件添加到仓库
+<code>$ git add readme.txt</code>
+$ git commit 把文件提交到仓库
+<code>$ git commit -m"readme file"
+-m后面跟说明
+</code>
+$ git status 查看结果,时刻掌握仓库当前状态
+<code>$ git status</code>
+$ git diff 查看和上次不同地方
+<code>$ git diff gitNotes.html</code>
+$ git log 查看命令的历史记录
+<code>$ git log
+$ commit id 版本号
+$ git log --pretty=oneline 简介历史记录信息</code>
+git reset
+<code>返回到之前版本
+$ git reset -hard HEAD^
+  HEAD^上一版本，HEAD^^上上一版本
+$ git reset -hard commit_id
+  返回到某个版本
+</code>
+$ cat 
+<code>$ cat readme.txt
+查看当前版本信息</code>
+$ git reflog
+<code>$ git reflog  记录每次记录命令</code>
+$ git checkout -- readme.txt
+<code>把readme.txt文件在工作区的修改全部撤销
+撤销暂存区的数据</code>
+$ git reset HEAD file
+<code>把暂存区的修改撤销掉（unstage），重新放回工作区</code>
+$ git rm file
+<code>$ git rm test.txt  删除文件</code>
+$ ssh-keygen -t rsa -C "youremail@example.com"
+<code>在一直回车，创建SSH Key</code>
+</pre>
+</body>
+</html>
