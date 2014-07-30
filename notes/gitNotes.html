@@ -33,20 +33,26 @@ $ git reset -hard HEAD^
 $ git reset -hard commit_id
   返回到某个版本
 </code>
-$ cat 
-<code>$ cat readme.txt
-查看当前版本信息</code>
-$ git reflog
-<code>$ git reflog  记录每次记录命令</code>
-$ git checkout -- readme.txt
-<code>把readme.txt文件在工作区的修改全部撤销
-撤销暂存区的数据</code>
-$ git reset HEAD file
-<code>把暂存区的修改撤销掉（unstage），重新放回工作区</code>
+$ cat 查看当前版本信息 
+<code>$ cat readme.txt</code>
+记录每次记录命令
+<code>$ git reflog</code>
+把readme.txt文件在工作区的修改全部撤销
+撤销暂存区的数据
+<code>$ git checkout -- readme.txt</code>
+把暂存区的修改撤销掉（unstage），重新放回工作区
+<code>$ git reset HEAD file</code>
 $ git rm file
 <code>$ git rm test.txt  删除文件</code>
-$ ssh-keygen -t rsa -C "youremail@example.com"
-<code>在一直回车，创建SSH Key</code>
+在一直回车，创建SSH Key
+<code>$ ssh-keygen -t rsa -C "youremail@example.com"</code>
+链接github上
+<code>$ git remote add origin git@github.com:michaelliao/learngit.git</code>
+推送本地内容到远程库
+<code>$ git push -u origin master</code>
+推送更新
+<code>$ git push origin master</code>
+
 </pre>
 </body>
 </html>
